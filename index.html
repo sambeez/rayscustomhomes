@@ -5,60 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ray's Construction</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-main.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&family=Source+Sans+Pro&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
+            <div id="nav-logo"></div>
+            <div id="nav-menu">
+                <div id="nav-menu-dash-1" class="nav-menu-dash"></div>
+                <div id="nav-menu-dash-2" class="nav-menu-dash"></div>
+                <div id="nav-menu-dash-3" class="nav-menu-dash"></div>
+            </div>
             <ul id="nav-list">
-                <li id="nav-home">Home</li>
-                <li id="nav-about">About</li>
-                <li id="nav-services">Services</li>
-                <li id="nav-contact">Contact Us</li>
+                <li id="nav-home-li"><p id="nav-home">Home</p></li>
+                <li id="nav-about-li"><p id="nav-about">About</p></li>
+                <li id="nav-services-li"><p id="nav-services">Services</p></li>
+                <li id="nav-contact-li"><p id="nav-contact">Contact Us</p></li>
             </ul>
         </nav>
         <div id="hero-display">
-            <img id="hero-img"  src="assets/Construction-Main.jpg" alt="">
-            <h1>Ray's Custom Homes</h1>
+            <div id="hero" class="header-img"></div>
+            <div id="logo" class="header-img"></div>
         </div>
     </header>
 
     <main>
         <section id="about">
             <h2 class="sub-heading">About</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nulla harum esse optio. Dolore accusamus excepturi aliquam laborum ab rem eius? Sint dolores ex magnam nisi obcaecati sit quas ullam tempore, ducimus cumque eius officia? Libero saepe magni alias pariatur ut hic veritatis, modi, accusantium quasi a incidunt! Exercitationem dignissimos quae odio nihil voluptatem libero odit enim culpa reiciendis. Earum quae quaerat suscipit tempore! Odio itaque delectus repellendus similique rerum minima incidunt pariatur a voluptate culpa. Deserunt distinctio quas officia minus explicabo! Saepe magnam expedita illo autem, tenetur facere iste, quis eveniet qui, nulla labore aut hic dignissimos quod perspiciatis!</p>
+            <p>Welcome to Ray's Custom Homes, your go-to destination for custom home construction, as well as industrial and commercial
+            building services. We are passionate about creating exceptional structures that surpass your expectations.</p>
+            
+            <p>Our experienced team of builders will work closely with you to bring your unique vision to life. From luxurious contemporary homes to functional workspaces, we handle every aspect of the building process with meticulous attention to detail and uncompromising quality.</p>
+            
+            <p>We prioritize open communication and strive to deliver projects on time and within budget. Contact us today to discuss your project and let us make your dreams a reality.</p>
         </section>
         <section id="services">
             <h2 class="sub-heading">Services</h2>
             <ul id="services-list">
                 <li>
-                    <img src="assets/Roofing.jpg" alt="">
-                    <h3>Residential</h3>
+                    <a href="gallery.html">
+                        <img src="assets/services/service-res.png" alt="">
+                        <h3>Residential</h3>
+                    </a>
                 </li>
                 <li>
-                    <img src="assets/Flooring.jpg" alt="">
-                    <h3>Industrial</h3>
+                    <a href="gallery.html">
+                        <img src="assets/services/service-ind.png" alt="">
+                        <h3>Industrial</h3>
+                    </a>
                 </li>
                 <li>
-                    <img src="assets/Plumbing.jpg" alt="">
-                    <h3>Commercial</h3>
+                    <a href="gallery.html">
+                        <img src="assets/services/service-com.png" alt="">
+                        <h3>Commercial</h3>
+                    </a>
                 </li>
             </ul>
-            <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
-            <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
-            <div class="pa-gallery-player-widget" style="width:100%; height:480px; display:none;"
-                data-link="https://photos.app.goo.gl/3Gg8AfKKCZBz8F5RA" data-title="Test1"
-                data-description="3 new items added to shared album">
-                <object
-                    data="https://lh3.googleusercontent.com/YFJmRJxI1gJtlxZvfxgqAhzJHmGyRoENZEKV3p0apMRhua22pEZTwlgPM-VSoBP_JR--af7iyUEgsPkrjnkt3x1gWakd2F2CujJYtbwXU0d6uFv9ZxhqLrza-3TiaGRucPfGlVS4-Q=w1920-h1080"></object>
-                <object
-                    data="https://lh3.googleusercontent.com/t7EH9v3SaodD8YM10Ywu4e_ViTEX7FMR5xlfRrfng8xLs2SN1ppcQ7jRF71CqEJQq8dRC9Gw1g_nfy39rXoLKT4L4jLNRuEy7egDHUoczHPNf1YzUFf2_f_u6ctrCqP-N1eROKZdwg=w1920-h1080"></object>
-                <object
-                    data="https://lh3.googleusercontent.com/luNaNSujA_yVQqXj0i7-DxTWM9NQGTLXnDBVqptpeCoUEQyMLSeIoMmxb_F751-yQ53aY7fGsgRk7xZ3tf94zSxQV-d3X0X1xcFTRQMDRPH_OpuWUlAwylwdUNWdJKCDO8kvLBICsA=w1920-h1080"></object>
-            </div>
-
-
         </section>
         <section id="contact-us">
             <h2 class="sub-heading">Contact Us</h2>
