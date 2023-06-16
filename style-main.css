@@ -287,3 +287,13 @@ footer {
         transition: none;
     }
 }
+
+@media only screen and (max-width:600px) {
+    #about {
+        padding: 50px 10%;
+    }
+
+    #about p {
+        font-size: 16px;
+    }
+}
