@@ -1,12 +1,188 @@
 header {
     height: 50px;
+    background-color: #333;
 }
 
-#gallery {
+#gallery-main {
     padding: 0;
 }
 
-.gallery-album {
+#gallery-main p {
+    text-align: center;
+    cursor: pointer;
+}
+
+#gallery-main div {
+    height: 31.2vh;
     width: 100%;
-    height: 30vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#gallery-main div p {
+    color: #fff;
+    font-size: 52px;
+    text-transform: uppercase;
+    position: absolute;
+    filter: drop-shadow(3px 3px 2px #000);
+}
+
+.gallery-main-res-img {
+    background: url(assets/services/service-res.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gallery-main-ind-img {
+    background: url(assets/services/service-ind.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gallery-main-com-img {
+    background: url(assets/services/service-com.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* --------------------------------------------------- */
+
+.gallery-main-res1-img {
+    background: url(assets/gallery/res-petpeswick.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* --------------------------------------------------- */
+
+.gallery-main-ind1-img {
+    background: url(assets/gallery/ind-nemak.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* --------------------------------------------------- */
+
+.gallery-main-com1-img {
+    background: url(assets/gallery/com-radio.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gallery-main-com2-img {
+    background: url(assets/gallery/com-popeyes.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* --------------------------------------------------- */
+
+.gallery-modal {
+    position: fixed;
+    /* position: absolute; */
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-feature,
+.gallery-feature2 {
+    /* margin-top: 55px; */
+    max-width: 50%;
+    max-height: 70%;
+    object-fit: cover;
+    border: 2px solid black;
+    position: absolute;
+    top: 10%;
+}
+
+.thumbnail,
+.thumbnail2 {
+    object-fit: cover;
+    max-width: 180px;
+    max-height: 100px;
+    cursor: pointer;
+    opacity: 0.5;
+    margin: 5px;
+    border: 2px solid black;
+}
+
+.thumbnail:hover,
+.thumbnail2:hover {
+    opacity:1;
+}
+
+.active,
+.active2 {
+    opacity:1;
+}
+
+.gallery-thumbnails-wrapper {
+    max-width: 75%;
+    display: flex;
+    min-height: 100px;
+    align-items: center;
+    position: absolute;
+    bottom: 0%;
+}
+
+.gallery-thumbnails-slider,
+.gallery-thumbnails-slider2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+}
+
+.thumbnails-arrow {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: absolute;
+}
+
+.thumbnails-button-left,
+.thumbnails-button-left2 {
+    left: -40px;
+}
+
+.thumbnails-button-right,
+.thumbnails-button-right2 {
+    right: -40px;
+}
+
+.thumbnails-arrow:hover {
+    opacity: 0.5;
+}
+
+.gallery-x, 
+.gallery-x2 {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 50px;
+    right: 15px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:720px) {
+    .gallery-feature {
+        max-width: 80%;
+    }
 }

@@ -97,6 +97,12 @@ nav {
     margin: 4px 0 0 10px;
 }
 
+#nav-logo a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
 #nav-menu {
     height: 50px;
     width: 50px;
@@ -130,7 +136,8 @@ nav ul li p {
     margin: 0;
 }
 
-#nav-list li p:hover {
+#nav-list li p:hover,
+#nav-list li p a:hover {
     color: #D17A22;
     cursor: pointer;
 }
@@ -179,7 +186,7 @@ main {
 }
 
 section {
-    padding: 50px 22%;
+    padding:50px 22%;
 }
 
 /* -------------------------------------- */
@@ -241,18 +248,14 @@ section {
 /* CONTACT US */
 #contact-us {
     background-color: #999;
+    padding: 50px 10%;
 }
 
 /* -------------------------------------- */
 
 /* FORM */
-form input {
-    width: 100%;
-    margin-bottom: 5px;
-}
-
-#message { 
-    height: 100px;
+iframe .HB1eCd-UMrnmb {
+    overflow-y: hidden;
 }
 
 /* -------------------------------------- */
